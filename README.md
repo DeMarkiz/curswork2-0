@@ -14,7 +14,7 @@
 ## Тесты: 
 Содержит тесты функционала.
 ## Установка:
-Клонируйте репозиторий: git clone https://github.com/WingBasil/PP_course_work_2
+Клонируйте репозиторий: git clone https://github.com/DeMarkiz/curswork2-0
 ## Установите зависимости:
 pip install -r requirements.txt
 ## Документация: - 
