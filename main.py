@@ -2,6 +2,7 @@ from config import VACANCIES_PATH_TXT, VACANCIES_PATH_JSON
 from src.json_saver import JSONSaver
 from src.txt_saver import TXTSaver
 from src.utils import user_choice_json, user_choice_txt
+from src.db import DBManager
 
 
 def main():
@@ -33,3 +34,38 @@ def main():
 
 if __name__ == "__main__":
     main()
+    db = DBManager(dbname='test', user='postgres', password='2585')
+    # Пример данных для добавления
+    employer_data = {
+        "naming": "Компания XYZ",
+        "industry": "Информационные технологии",
+        "website": "https://xyz.com",
+        "location": "Москва"
+    }
+
+    # Добавление работодателя
+    employer_id = db.add_employer(
+        employer_data["naming"],
+        employer_data["industry"],
+        employer_data["website"],
+        employer_data["location"]
+    )
+
+    # Пример данных вакансии
+    vacancy_data = {
+        "title": "Программист Python",
+        "description": "Разработка приложений на Python",
+        "salary": 100000,
+        "data_posted": "2024-10-07"
+    }
+
+    # Добавление вакансии с указанием ID работодателя
+    db.add_vacancy(
+        vacancy_data["title"],
+        vacancy_data["description"],
+        vacancy_data["salary"],
+        employer_id,
+        vacancy_data["data_posted"]
+    )
+
+    db.close()
