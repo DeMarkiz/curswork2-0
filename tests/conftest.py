@@ -28,3 +28,4 @@ def json_saver():
 @pytest.fixture()
 def txt_saver():
     return TXTSaver(filename=TEST_VACANCIES_PATH_TXT)
+

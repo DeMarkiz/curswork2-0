@@ -67,3 +67,4 @@ class DBManager:
         if self.conn:
             self.conn.close()
 
+
