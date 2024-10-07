@@ -19,4 +19,4 @@ class HeadHunterAPI(GetVacanciesAPI):
 
     def get_vacancies(self, keyword: str, per_page: int):
         return self.get_response(keyword, per_page).json()["items"]
-    
+

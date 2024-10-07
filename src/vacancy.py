@@ -57,3 +57,4 @@ class Vacancy:
             "requirement": self.requirement,
             "responsibility": self.responsibility,
         }
+

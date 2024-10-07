@@ -23,3 +23,4 @@ def test_del_data(txt_saver):
     """ Тест утверждает, что файл пустой после удаления данных """
 
     assert txt_saver.del_data() is None
+

@@ -30,3 +30,4 @@ def test_del_data(json_saver):
     """ Тест утверждает, что файл пустой после удаления данных """
 
     assert json_saver.del_data() is None
+

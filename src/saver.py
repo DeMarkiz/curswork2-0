@@ -17,4 +17,4 @@ class Saver(ABC):
     @abstractmethod
     def del_data(self):
         pass
-    
+

@@ -26,4 +26,4 @@ class TXTSaver(Saver):
 
         with open(self.filename, "w", encoding="utf-8"):
             pass
-        
+
