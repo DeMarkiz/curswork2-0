@@ -54,3 +54,4 @@ def test_vacancy_to_dict(vacancy):
         "requirement": "Опыт работы в продажах обязателен",
         "responsibility": "Консультирование клиентов"
     }
+

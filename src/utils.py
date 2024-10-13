@@ -47,3 +47,4 @@ def user_choice_txt():
     saver.write_data(vacancies)
     saver.get_data()
     print("Данные записаны в txt-файл")
+
